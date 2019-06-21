@@ -13,4 +13,5 @@ English
 
 Website for **Naed Byggkonsult**
 
-Naed Byggkonsult is a... 
+
+Naed Byggkonsult is a construction consultancy that assists with building permits advice, building permits and building permits drawings. You get advice with different types of application documents. As a control manager in the construction industry, you can come to us when it comes to rebuilding, building or new construction.
