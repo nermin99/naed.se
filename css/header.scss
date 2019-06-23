@@ -1,0 +1,20 @@
+header {
+    display: inline-block;
+    position: fixed;
+    height: 7.5rem;
+    width: 100%;
+    background-color: rgb(178, 204, 236);
+    aside {
+        display: inline-block;
+        padding: 1.25rem;
+        height: 5rem;
+    }
+    .header-nav {
+        display: inline-block;
+        ul {
+            li {
+                display: inline;
+            }
+        }
+    }
+}

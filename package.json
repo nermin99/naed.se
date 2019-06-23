@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "sass-watch": "sass --watch css/style.scss:css/style.css --style compressed",
+    "sass-watch": "sass --watch css/base.scss:css/style.css --style compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

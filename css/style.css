@@ -1,1 +1,1 @@
-*{margin:0;padding:0}header{background-color:#b2ccec}/*# sourceMappingURL=style.css.map */
+*{margin:0;padding:0}header{display:inline-block;position:fixed;height:7.5rem;width:100%;background-color:#b2ccec}header aside{display:inline-block;padding:1.25rem;height:5rem}header .header-nav{display:inline-block}header .header-nav ul li{display:inline}main{padding-top:7.5rem}/*# sourceMappingURL=style.css.map */
