@@ -7,13 +7,33 @@ header {
     aside {
         display: inline-block;
         padding: 1.25rem;
-        height: 5rem;
+        height: 4rem;
+        margin-left: 4rem;
+        #logo-text {
+            font-style: italic; 
+            font-family: $pt-sans;
+            font-size: 2.625rem;
+        }
+        #logo-text-desc {
+            font-style: italic; 
+            font-family: $pt-sans;
+            font-size: 0.75rem;
+        }
     }
     .header-nav {
         display: inline-block;
+        position: absolute;
+        top: 4rem;
+        right: 10rem;
         ul {
             li {
+                padding: 0.5rem;
                 display: inline;
+            }
+        }
+        a {
+            &.selected {
+                color: red;
             }
         }
     }
