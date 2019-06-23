@@ -1,0 +1,24 @@
+{
+  "name": "naed",
+  "version": "1.0.0",
+  "description": "Svenska -------",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.21.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass-watch": "sass --watch css/style.scss:css/style.css --style compressed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nermin99/naed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nermin99/naed/issues"
+  },
+  "homepage": "https://github.com/Nermin99/naed#readme"
+}
