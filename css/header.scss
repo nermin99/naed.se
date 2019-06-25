@@ -3,19 +3,22 @@ header {
     position: fixed;
     height: 7.5rem;
     width: 100%;
-    background-color: rgb(178, 204, 236);
+    //background-color: rgb(178, 204, 236);
+    background-color: rgb(55, 55, 55);
     aside {
         display: inline-block;
         padding: 1.25rem;
         height: 4rem;
         margin-left: 4rem;
         #logo-text {
+            color: white;
             font-style: italic; 
             font-family: $pt-sans;
             font-size: 2.625rem;
             margin: 0;
         }
         #logo-text-desc {
+            color: white;
             font-style: italic; 
             font-family: $pt-sans;
             font-size: 0.75rem;
@@ -30,6 +33,9 @@ header {
     right: 10rem;
     ul {
         li {
+            a {
+                color: white;
+            }
             padding: 0.5rem;
             display: inline;
         }
