@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif&display=swap');
 
 @import "typography.scss";
-@import "addons.scss";
-@import "header.scss";
-@import "main.scss";
-@import "footer.scss";
+// if desktop import this
+@import "desktop/addons.scss";
+@import "desktop/header.scss";
+@import "desktop/main.scss";
+@import "desktop/footer.scss";
+
+// if phone import this
+/*
+@import "mobile/addons.scss";
+@import "mobile/header.scss";
+@import "mobile/main.scss";
+@import "mobile/footer.scss";
+*/
 
 * {
     margin: 0;
