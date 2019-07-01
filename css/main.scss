@@ -2,6 +2,7 @@ main {
     padding-top: 7.5rem;
 }
 
+/* Hem */
 #hem {
     padding-top: 15rem;
     padding-bottom: 17.5rem;
@@ -20,6 +21,7 @@ main {
     }
 }
 
+/* Tjänster */
 #tjanster {
     display: inline-block;
     width: 100%;
@@ -37,15 +39,16 @@ main {
     }
 }
 
+/* Om */
 #om {
     display: inline-block;
     width: 100%;
-    height: 56rem;
+    height: 59rem;
     background-color: black;
     color: white;
     article {
         margin: 0 auto;
-        margin-top: 15rem;
+        margin-top: 22rem;
         padding: 2.5rem;
         font-family: $pt-sans;
         text-align: justify;
@@ -53,5 +56,40 @@ main {
     }
     ul {
         text-align: justify;
+    }
+}
+
+/* Kontakt */
+#kontakt {
+    display: inline-block;
+    width: 100%;
+    height: 56rem;
+    background-color: white;
+    color: black;
+    text-align: justify;
+    address {
+        margin: 0 auto;
+        //margin-top: 15rem;
+        padding: 2.5rem;
+        font-family: $pt-sans;
+        text-align: justify;
+        width: 27rem;
+    }
+    iframe {
+        display: block;
+        margin: 0 auto;
+        padding: 2.5rem;
+        font-family: $pt-sans;
+        text-align: justify;
+        //width: 27rem;
+    }
+    h2 {
+        font-style: normal;
+    }
+    p {
+        font-style: normal;
+        a {
+            text-decoration: underline;
+        }
     }
 }
