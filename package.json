@@ -4,7 +4,7 @@
   "description": "Svenska -------",
   "main": "index.js",
   "dependencies": {
-    "sass": "^1.21.0"
+    "sass": "^1.22.3"
   },
   "devDependencies": {},
   "scripts": {
