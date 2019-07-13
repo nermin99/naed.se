@@ -8,7 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "sass-watch": "sass --watch css/base.scss:css/style.css --style compressed",
+    "sass-watch-min": "sass --watch css/base.scss:css/style.css --style compressed",
+    "sass-watch": "sass --watch css/base.scss:css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
