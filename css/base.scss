@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif&display=swap');
 
-// General Typography
+// General Typography / Globals
 @import "typography.scss";
 
  /* Extra small devices (phones, 600px and down) */
 //  @media only screen and (max-width: 600px) {
-//     @import "mobile/addons.scss";
 //     @import "mobile/header.scss";
 //     @import "mobile/main.scss";
 //     @import "mobile/footer.scss";
@@ -19,12 +18,10 @@
 
  /* Large devices (laptops/desktops, 992px and up) */
 //  @media only screen and (min-width: 992px) {
-//     @import "desktop/addons.scss";
 //     @import "desktop/header.scss";
 //     @import "desktop/main.scss";
 //     @import "desktop/footer.scss";
 //  }
-    @import "desktop/addons.scss";
     @import "desktop/header.scss";
     @import "desktop/main.scss";
     @import "desktop/footer.scss";
@@ -34,6 +31,7 @@
 * {
     margin: 0;
     padding: 0;
+    // box-sizing: border-box;
 }
 
 a {
