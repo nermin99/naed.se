@@ -1,5 +1,5 @@
-function init() {
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-}
+document.getElementById("year").innerHTML = new Date().getFullYear();
 
-window.addEventListener("load", init);
+window.addEventListener("DOMContentLoaded", () => {
+  // init();
+});
