@@ -1,12 +1,12 @@
 main {
-    padding-top: 7.5rem;
+    // padding-top: $header-height;
 }
 
 /* Hem */
 #hem {
     display: flex;
     width: 100%;
-    height: calc(100vh - #{$header-height});
+    height: 100vh;
     min-height: fit-content;
 
     background-image: url("../images/apartments-background.jpg");
@@ -33,8 +33,9 @@ main {
 #tjanster {
     display: flex;
     width: 100%;
-    height: calc(100vh - #{$header-height});
+    height: 100vh;
     min-height: fit-content;
+
     article {
         margin: auto;
         width: 30rem;
@@ -52,7 +53,7 @@ main {
 #om {
     display: flex;
     width: 100%;
-    height: calc(100vh - #{$header-height});
+    height: 100vh;
     min-height: fit-content;
 
     background-color: black;
@@ -74,7 +75,7 @@ main {
 #kontakt {
     display: flex;
     width: 100%;
-    height: calc(100vh - #{$header-height});
+    height: 100vh;
     min-height: fit-content;
 
     background-image: url("../images/NAED-Byggkonsult-2.jpg");
@@ -84,8 +85,9 @@ main {
 
     address {
         margin: auto;
+        margin-top: $header-height;
         width: 40rem;
-        padding: 2.5rem;
+        // padding: 2.5rem;
 
         font-family: $pt-sans;
         text-align: center;

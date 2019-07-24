@@ -39,10 +39,6 @@ p {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
-#bold {
-  font-weight: bold;
-}
-
 header {
   display: inline-block;
   position: fixed;
@@ -80,22 +76,20 @@ header aside #logo-text-desc {
       color: white;
   }
   */
-  padding: 0.5rem;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.1rem;
+  padding: 0.4rem;
   display: inline;
 }
 .header-nav a.selected {
   color: red;
 }
 
-main {
-  padding-top: 7.5rem;
-}
-
 /* Hem */
 #hem {
   display: flex;
   width: 100%;
-  height: calc(100vh - 7.5rem);
+  height: 100vh;
   min-height: fit-content;
   background-image: url("../images/apartments-background.jpg");
   background-repeat: no-repeat;
@@ -104,19 +98,22 @@ main {
 #hem div {
   margin: auto;
   width: 100%;
-  padding: 0.5%;
+  padding: 0.7%;
   font-family: "PT Sans", sans-serif;
   text-align: center;
   color: white;
   background-color: black;
   font-size: 1.5rem;
 }
+#hem div h2 {
+  margin-bottom: 1rem;
+}
 
 /* Tjänster */
 #tjanster {
   display: flex;
   width: 100%;
-  height: calc(100vh - 7.5rem);
+  height: 100vh;
   min-height: fit-content;
 }
 #tjanster article {
@@ -134,7 +131,7 @@ main {
 #om {
   display: flex;
   width: 100%;
-  height: calc(100vh - 7.5rem);
+  height: 100vh;
   min-height: fit-content;
   background-color: black;
   color: white;
@@ -154,7 +151,7 @@ main {
 #kontakt {
   display: flex;
   width: 100%;
-  height: calc(100vh - 7.5rem);
+  height: 100vh;
   min-height: fit-content;
   background-image: url("../images/NAED-Byggkonsult-2.jpg");
   background-repeat: no-repeat;
@@ -162,8 +159,8 @@ main {
 }
 #kontakt address {
   margin: auto;
+  margin-top: 7.5rem;
   width: 40rem;
-  padding: 2.5rem;
   font-family: "PT Sans", sans-serif;
   text-align: center;
   font-style: normal;
@@ -199,7 +196,8 @@ footer p {
   margin: 0 auto;
   width: fit-content;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-family: "PT Sans", sans-serif;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -211,9 +209,6 @@ footer p {
 a {
   text-decoration: none;
   color: black;
-}
-a:hover {
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
