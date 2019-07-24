@@ -146,6 +146,11 @@ header aside #logo-text-desc {
 #om ul {
   text-align: justify;
 }
+#om img {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
 
 /* Kontakt */
 #kontakt {
