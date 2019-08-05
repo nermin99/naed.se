@@ -40,7 +40,7 @@ main {
     background-image: url("../images/window.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; // not sure if want
     background-size: cover; // This is what makes the background image rescale based on the container's size
 
     article {
@@ -98,15 +98,18 @@ main {
     height: 100vh;
     min-height: fit-content;
 
-    background-image: url("../images/NAED-Byggkonsult-2.jpg");
+    background-image: url("../images/white-beams.jpg");
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    // background-size: 100% 100%;
+    background-attachment: fixed; // not sure if want
+    background-size: cover; // This is what makes the background image rescale based on the container's size
+
 
     address {
-        margin: $header-height auto 1rem;
+        margin: auto;
+        padding-top: $header-height;
         width: 40rem;
-        // padding: 2.5rem;
+        height: fit-content;
 
         font-family: $pt-sans;
         text-align: center;
