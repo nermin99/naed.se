@@ -35,15 +35,23 @@ main {
     width: 100%;
     height: 100vh;
     min-height: fit-content;
+
+    background-image: url("../images/window.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; // This is what makes the background image rescale based on the container's size
+
     article {
         margin: auto;
+        margin-left: 10%;
         width: 30rem;
         padding: 2.5rem;
 
         font-family: $pt-sans;
-        text-align: justify;
-        ul {
-            text-align: justify;
+        ul li {
+            list-style-position: outside;
+            margin-left: 1em;
         }
     }
 }
