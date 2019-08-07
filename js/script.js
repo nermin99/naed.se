@@ -4,10 +4,6 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 /* Active page on site */
 const displayWidth = document.documentElement.clientWidth;
 
-if (displayWidth >= 1200) {
-  window.addEventListener("scroll", debounce(onScroll));
-}
-
 const home = document.getElementById('hem');
 const services = document.getElementById('tjanster');
 const about = document.getElementById('om');
@@ -16,6 +12,11 @@ const contact = document.getElementById('kontakt');
 let topOfView, topOfHome, topOfServices, topOfAbout, topOfContact;
 
 let navLinks = Array.from(document.getElementById("navbar").getElementsByTagName("a"));
+
+if (displayWidth >= 1200) {
+  window.addEventListener("scroll", debounce(onScroll));
+  navLinks[0].classList.add('selected'); // initial highlight when not scrolled
+}
 
 function onScroll(e) {
   topOfView = window.scrollY;
