@@ -10,8 +10,10 @@ main {
     min-height: fit-content;
 
     background-image: url("../images/apartments-background.jpg");
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover; // This is what makes the background image rescale based on the container's size
+
     div {
         margin: auto;
         width: 100%;
