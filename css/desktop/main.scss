@@ -1,13 +1,9 @@
-main {
-    // padding-top: $header-height;
-}
-
 /* Hem */
 #hem {
     display: flex;
     width: 100%;
-    height: 100vh;
-    min-height: fit-content;
+    min-height: 100vh;
+    height: fit-content;
 
     background-image: url("../images/apartments-background.jpg");
     background-position: center center;
@@ -36,8 +32,8 @@ main {
 #tjanster {
     display: flex;
     width: 100%;
-    height: 100vh;
-    min-height: fit-content;
+    min-height: 100vh;
+    height: fit-content;
 
     background-image: url("../images/window.jpg");
     background-position: center center;
@@ -63,8 +59,8 @@ main {
 #om {
     display: flex;
     width: 100%;
-    height: 100vh;
-    min-height: fit-content;
+    min-height: 100vh;
+    height: fit-content;
 
     background-color: black;
     color: white;
@@ -97,8 +93,8 @@ main {
 #kontakt {
     display: flex;
     width: 100%;
-    height: 100vh;
-    min-height: fit-content;
+    min-height: 100vh;
+    height: fit-content;
 
     background-image: url("../images/white-beams.jpg");
     background-position: center center;
