@@ -3,29 +3,24 @@
 // General Typography / Globals
 @import "typography.scss";
 
- /* Extra small devices (phones, 600px and down) */
-//  @media only screen and (max-width: 600px) {
-//     @import "mobile/header.scss";
-//     @import "mobile/main.scss";
-//     @import "mobile/footer.scss";
-//  }
+ /* Extra small devices (phones, < 768px) */
+ @media only screen and (max-width: 991px) {
+    @import "mobile/header.scss";
+    @import "mobile/main.scss";
+    @import "mobile/footer.scss";
+ }
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
- //@media only screen and (min-width: 600px) {...}
-
- /* Medium devices (landscape tablets, 768px and up) */
+ /* Small devices (tablets (vertical), >= 768px) */
  //@media only screen and (min-width: 768px) {...}
 
- /* Large devices (laptops/desktops, 992px and up) */
-//  @media only screen and (min-width: 992px) {
-//     @import "desktop/header.scss";
-//     @import "desktop/main.scss";
-//     @import "desktop/footer.scss";
-//  }
+ /* Medium devices (tablets (horizontal) and small desktops, >= 992px) */
+ @media only screen and (min-width: 992px) {
     @import "desktop/header.scss";
     @import "desktop/main.scss";
     @import "desktop/footer.scss";
- /* Extra large devices (large laptops and desktops, 1200px and up) */
+ }
+
+ /* Large devices (desktops, >= 1200px) */
  //@media only screen and (min-width: 1200px) {...}
 
 * {
@@ -37,7 +32,4 @@
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    &:hover {
-        // text-decoration: underline;
-    }
 }

@@ -1,46 +1,44 @@
 header {
     display: inline-block;
     position: fixed;
-    height: 7.5rem;
+    height: $header-height;
     width: 100%;
     background-color: rgb(178, 204, 236);
     //background-color: rgb(55, 55, 55);
     aside {
-        display: block;
+        display: inline-block;
         padding: 1.25rem;
         height: 4rem;
+        margin-left: 5rem;
         #logo-text {
             //color: white;
-            text-align: center;
-            font-style: italic; 
-            font-family: $pt-sans;
+            font-style: italic;
+            font-family: $pt-helvetica;
             font-size: 2.625rem;
             margin: 0;
         }
         #logo-text-desc {
             //color: white;
-            text-align: center;
-            font-style: italic; 
+            font-style: italic;
             font-family: $pt-sans;
-            font-size: 0.75rem;
+            font-size: 1.1rem;
         }
     }
 }
 
 .header-nav {
-    display: none;
+    display: inline-block;
     position: absolute;
     top: 4rem;
-    right: 10rem;
+    right: 7rem;
     ul {
         li {
-            /*
-            a {
-                color: white;
-            }
-            */
-            padding: 0.5rem;
             display: inline;
+            margin: 0 0.9rem;
+            font-family: $pt-sans;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
     }
     a {
