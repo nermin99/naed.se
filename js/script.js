@@ -13,7 +13,7 @@ let topOfView, topOfHome, topOfServices, topOfAbout, topOfContact;
 
 let navLinks = Array.from(document.getElementById("navbar").getElementsByTagName("a"));
 
-if (displayWidth >= 1200) {
+if (displayWidth >= 992) {
   window.addEventListener("scroll", debounce(onScroll));
   navLinks[0].classList.add('selected'); // initial highlight when not scrolled
 }
