@@ -1,13 +1,13 @@
 footer {
-    background-color: rgb(178, 204, 236);
-    display: block;
+    display: flex;
     width: 100%;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    margin: 0 auto;
+    height: $footer-height-mobile;
+    background-color: $NAED-blue;
     p {
-        margin: 0 auto;
+        margin: auto;
+        padding: 1rem;
         width: fit-content;
+        height: fit-content;
         text-align: center;
         font-size: 1.0rem;
         font-family: $pt-sans;
