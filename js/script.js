@@ -1,9 +1,32 @@
+const displayWidth = document.documentElement.clientWidth;
+
 /* Footer current year */
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
-/* Active page on site */
-const displayWidth = document.documentElement.clientWidth;
+/* Open and close navigation menu on mobile */
 
+if (displayWidth < 992) {
+  initMenuTogglers();
+}
+
+function initMenuTogglers() {
+  const toggleButton = document.querySelector('#toggle-menu-button');
+  toggleButton.addEventListener('click', toggleMenu);
+
+  const anchorPoints = document.getElementById('navbar').querySelectorAll('li');
+  anchorPoints.forEach(anchor => anchor.addEventListener('click', toggleMenu));
+}
+
+function toggleMenu() {
+  const element = document.getElementById("navbar");
+  if (element.style.display === "block") {
+    element.style.display = "none";
+  } else {
+    element.style.display = "block";
+  }
+}
+
+/* Active page on site */
 const home = document.getElementById('hem');
 const services = document.getElementById('tjanster');
 const about = document.getElementById('om');
@@ -13,12 +36,12 @@ let topOfView, topOfHome, topOfServices, topOfAbout, topOfContact;
 
 let navLinks = Array.from(document.getElementById("navbar").getElementsByTagName("a"));
 
-if (displayWidth >= 992) {
-  window.addEventListener("scroll", debounce(onScroll));
-  navLinks[0].classList.add('selected'); // initial highlight when not scrolled
-}
+// if (displayWidth >= 992) {
+// }
+window.addEventListener("scroll", debounce(onScroll));
+navLinks[0].classList.add('selected'); // initial highlight when not scrolled
 
-function onScroll(e) {
+function onScroll() {
   topOfView = window.scrollY;
   topOfHome = home.offsetTop;
   topOfServices = services.offsetTop;
@@ -38,7 +61,7 @@ function onScroll(e) {
   }
 }
 
-function debounce(func, wait = 20, immediate = true) {
+function debounce(func, wait = 10, immediate = true) {
   var timeout;
   return function () {
     var context = this, args = arguments;
@@ -53,11 +76,11 @@ function debounce(func, wait = 20, immediate = true) {
   };
 };
 
-
+/*
 window.addEventListener("load", () => {
-  // init();
+  init();
 });
 
 window.addEventListener("DOMContentLoaded", () => {
-  // init();
-});
+  init();
+}); */
