@@ -1,49 +1,53 @@
 header {
-    display: inline-block;
     position: fixed;
-    height: $header-height;
+    display: flex;
+    min-height: $header-height;
+    height: fit-content;
     width: 100%;
-    background-color: rgb(178, 204, 236);
-    //background-color: rgb(55, 55, 55);
+    align-items: center;
+    justify-content: space-between;
+    background-color: $NAED-blue;
+
     aside {
-        display: inline-block;
-        padding: 1.25rem;
-        height: 4rem;
+        padding: 1rem;
+        height: fit-content;
+        width: fit-content;
         margin-left: 5rem;
-        #logo-text {
-            //color: white;
+        .logo-text {
             font-style: italic;
             font-family: $pt-helvetica;
             font-size: 2.625rem;
             margin: 0;
         }
-        #logo-text-desc {
-            //color: white;
+        .logo-text-desc {
             font-style: italic;
             font-family: $pt-sans;
             font-size: 1.1rem;
         }
     }
-}
 
-.header-nav {
-    display: inline-block;
-    position: absolute;
-    top: 4rem;
-    right: 7rem;
-    ul {
-        li {
-            display: inline;
-            margin: 0 0.9rem;
-            font-family: $pt-sans;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+    #toggle-menu-button {
+        display: none;
     }
-    a {
-        &.selected {
-            color: red;
+
+    nav {
+        margin-right: 7rem;
+        width: fit-content;
+        height: fit-content;
+        ul {
+            li {
+                display: inline;
+                margin: 0 0.9rem;
+                font-family: $pt-sans;
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+        a {
+            &.selected {
+                color: red;
+            }
         }
     }
 }

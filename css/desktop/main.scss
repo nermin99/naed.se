@@ -38,8 +38,8 @@
     background-image: url("../images/window.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed; // not sure if want
-    background-size: cover; // This is what makes the background image rescale based on the container's size
+    background-attachment: fixed;
+    background-size: cover;
 
     article {
         margin: auto;
@@ -69,6 +69,9 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
+        @media only screen and (max-width: 1102px) {
+            margin-top: $header-height;
+        }
         max-width: 90%;
     }
     article {
@@ -99,9 +102,8 @@
     background-image: url("../images/white-beams.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed; // not sure if want
-    background-size: cover; // This is what makes the background image rescale based on the container's size
-
+    background-attachment: fixed;
+    background-size: cover;
 
     address {
         margin: auto;
