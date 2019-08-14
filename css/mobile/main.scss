@@ -38,14 +38,14 @@
     background-image: url("../images/window.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed; // not sure if want
-    background-size: cover; // This is what makes the background image rescale based on the container's size
+    background-attachment: fixed;
+    background-size: cover;
 
     article {
         margin: auto;
-        margin-left: 10%;
         width: 30rem;
         padding: 2.5rem;
+        padding-top: $header-height-mobile;
 
         font-family: $pt-sans;
         ul li {
@@ -73,6 +73,7 @@
     }
     article {
         margin: auto;
+        margin-top: $header-height-mobile;
         width: 27rem;
         padding: 0 2.5rem;
 
@@ -99,13 +100,12 @@
     background-image: url("../images/white-beams.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed; // not sure if want
-    background-size: cover; // This is what makes the background image rescale based on the container's size
-
+    background-attachment: fixed;
+    background-size: cover;
 
     address {
         margin: auto;
-        padding-top: $header-height;
+        margin-top: $header-height-mobile;
         width: 40rem;
         height: fit-content;
 
