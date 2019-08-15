@@ -6,24 +6,24 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 /* Open and close navigation menu on mobile */
 
 if (displayWidth < 992) {
-  initMenuTogglers();
+	initMenuTogglers();
 }
 
 function initMenuTogglers() {
-  const toggleButton = document.querySelector('#toggle-menu-button');
-  toggleButton.addEventListener('click', toggleMenu);
+	const toggleButton = document.querySelector('#toggle-menu-button');
+	toggleButton.addEventListener('click', toggleMenu);
 
-  const anchorPoints = document.getElementById('navbar').querySelectorAll('li');
-  anchorPoints.forEach(anchor => anchor.addEventListener('click', toggleMenu));
+	const anchorPoints = document.getElementById('navbar').querySelectorAll('li');
+	anchorPoints.forEach(anchor => anchor.addEventListener('click', toggleMenu));
 }
 
 function toggleMenu() {
-  const element = document.getElementById("navbar");
-  if (element.style.display === "block") {
-    element.style.display = "none";
-  } else {
-    element.style.display = "block";
-  }
+	const element = document.getElementById("navbar");
+	if (element.style.display === "block") {
+		element.style.display = "none";
+	} else {
+		element.style.display = "block";
+	}
 }
 
 /* Active page on site */
@@ -42,38 +42,39 @@ window.addEventListener("scroll", debounce(onScroll));
 navLinks[0].classList.add('selected'); // initial highlight when not scrolled
 
 function onScroll() {
-  topOfView = window.scrollY;
-  topOfHome = home.offsetTop;
-  topOfServices = services.offsetTop;
-  topOfAbout = about.offsetTop;
-  topOfContact = contact.offsetTop;
+	topOfView = window.scrollY;
+	topOfHome = home.offsetTop;
+	topOfServices = services.offsetTop;
+	topOfAbout = about.offsetTop;
+	topOfContact = contact.offsetTop;
 
-  navLinks.forEach(a => a.classList.remove('selected'))
+	navLinks.forEach(a => a.classList.remove('selected'))
 
-  if (topOfView < topOfServices) {
-    navLinks[0].classList.add('selected');
-  } else if (topOfView >= topOfServices && topOfView < topOfAbout) {
-    navLinks[1].classList.add('selected');
-  } else if (topOfView >= topOfAbout && topOfView < topOfContact) {
-    navLinks[2].classList.add('selected');
-  } else if (topOfView >= topOfContact) {
-    navLinks[3].classList.add('selected');
-  }
+	if (topOfView < topOfServices) {
+		navLinks[0].classList.add('selected');
+	} else if (topOfView >= topOfServices && topOfView < topOfAbout) {
+		navLinks[1].classList.add('selected');
+	} else if (topOfView >= topOfAbout && topOfView < topOfContact) {
+		navLinks[2].classList.add('selected');
+	} else if (topOfView >= topOfContact) {
+		navLinks[3].classList.add('selected');
+	}
 }
 
 function debounce(func, wait = 10, immediate = true) {
-  var timeout;
-  return function () {
-    var context = this, args = arguments;
-    var later = function () {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
+	var timeout;
+	return function () {
+		var context = this,
+			args = arguments;
+		var later = function () {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
 };
 
 /*

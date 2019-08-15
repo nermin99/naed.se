@@ -1,15 +1,16 @@
 footer {
-    display: flex;
-    width: 100%;
-    height: $footer-height-mobile;
-    background-color: $NAED-blue;
-    p {
-        margin: auto;
-        padding: 1rem;
-        width: fit-content;
-        height: fit-content;
-        text-align: center;
-        font-size: 1.0rem;
-        font-family: $pt-sans;
-    }
+	display: flex;
+	width: 100%;
+	height: $footer-height-mobile;
+	background-color: $NAED-blue;
+
+	p {
+		margin: auto;
+		padding: 1rem;
+		width: fit-content;
+		height: fit-content;
+		text-align: center;
+		font-size: 1.0rem;
+		font-family: $pt-sans;
+	}
 }
