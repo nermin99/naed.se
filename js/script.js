@@ -50,14 +50,14 @@ function onScroll() {
 
 	navLinks.forEach(a => a.classList.remove('selected'))
 
-	if (topOfView < topOfServices) {
-		navLinks[0].classList.add('selected');
-	} else if (topOfView >= topOfServices && topOfView < topOfAbout) {
-		navLinks[1].classList.add('selected');
-	} else if (topOfView >= topOfAbout && topOfView < topOfContact) {
-		navLinks[2].classList.add('selected');
-	} else if (topOfView >= topOfContact) {
-		navLinks[3].classList.add('selected');
+	if (topOfView < (topOfServices - 1)) {
+		navLinks[0].classList.add('selected'); // home
+	} else if (topOfView >= (topOfServices - 1) && topOfView < (topOfAbout - 1)) {
+		navLinks[1].classList.add('selected'); // services
+	} else if (topOfView >= (topOfAbout - 1) && topOfView < (topOfContact - 1)) {
+		navLinks[2].classList.add('selected'); // about
+	} else if (topOfView >= (topOfContact - 1)) {
+		navLinks[3].classList.add('selected'); // contact
 	}
 }
 
