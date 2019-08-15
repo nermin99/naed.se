@@ -1,25 +1,27 @@
 {
-  "name": "naed",
-  "version": "1.0.0",
-  "description": "Svenska -------",
-  "main": "index.js",
-  "dependencies": {
-    "sass": "^1.22.3"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "sass-watch-min": "sass --watch css/base.scss:css/style.css --style compressed",
-    "sass-watch": "sass --watch css/base.scss:css/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nermin99/naed.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Nermin99/naed/issues"
-  },
-  "homepage": "https://github.com/Nermin99/naed#readme"
+	"name": "naed",
+	"version": "1.0.0",
+	"description": "Svenska -------",
+	"main": "index.js",
+	"dependencies": {
+		"http-server": "^0.11.1",
+		"sass": "^1.22.3"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"start": "http-server",
+		"sass-watch-min": "sass --watch css/base.scss:css/style.css --style compressed",
+		"sass-watch": "sass --watch css/base.scss:css/style.css",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Nermin99/naed.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Nermin99/naed/issues"
+	},
+	"homepage": "https://github.com/Nermin99/naed#readme"
 }
