@@ -20,13 +20,16 @@ function initMenuTogglers() {
 function toggleMenu() {
 	const navbar = document.getElementById('navbar');
 	const menuButton = document.getElementById('toggle-menu-button');
+	const menuIcon = document.getElementById('toggle-menu-icon')
 
-	if (navbar.style.display === "block") {
+	if (navbar.style.display === "block") { // hide menu
 		navbar.style.display = "none";
 		menuButton.classList.remove('showMenu');
-	} else {
+		menuIcon.src = "images/bars-solid.svg";
+	} else { // show menu
 		navbar.style.display = "block";
 		menuButton.classList.add('showMenu');
+		menuIcon.src = "images/times-solid.svg";
 	}
 }
 
