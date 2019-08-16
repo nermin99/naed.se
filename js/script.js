@@ -18,11 +18,15 @@ function initMenuTogglers() {
 }
 
 function toggleMenu() {
-	const element = document.getElementById("navbar");
-	if (element.style.display === "block") {
-		element.style.display = "none";
+	const navbar = document.getElementById('navbar');
+	const menuButton = document.getElementById('toggle-menu-button');
+
+	if (navbar.style.display === "block") {
+		navbar.style.display = "none";
+		menuButton.classList.remove('showMenu');
 	} else {
-		element.style.display = "block";
+		navbar.style.display = "block";
+		menuButton.classList.add('showMenu');
 	}
 }
 
