@@ -25,11 +25,11 @@ function toggleMenu() {
 	if (navbar.style.display === "block") { // hide menu
 		navbar.style.display = "none";
 		menuButton.classList.remove('showMenu');
-		menuIcon.src = "images/bars-solid.svg";
+		menuIcon.src = "assets/bars-solid.svg";
 	} else { // show menu
 		navbar.style.display = "block";
 		menuButton.classList.add('showMenu');
-		menuIcon.src = "images/times-solid.svg";
+		menuIcon.src = "assets/times-solid.svg";
 	}
 }
 
