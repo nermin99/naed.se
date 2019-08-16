@@ -43,7 +43,7 @@ let navLinks = Array.from(document.getElementById("navbar").getElementsByTagName
 // if (displayWidth >= 992) {
 // }
 window.addEventListener("scroll", debounce(onScroll));
-navLinks[0].classList.add('selected'); // initial highlight when not scrolled
+onScroll(); // initial highlight when not scrolled
 
 function onScroll() {
 	topOfView = window.scrollY;
