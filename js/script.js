@@ -5,14 +5,10 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 
 /* Open and close navigation menu on mobile */
 
-if (displayWidth < 992) {
-	initMenuTogglers();
-}
-
-function initMenuTogglers() {
+(function initMenuTogglers() {
 	const toggleButton = document.querySelector('#toggle-menu-button');
 	toggleButton.addEventListener('click', toggleMenu);
-}
+}());
 
 function toggleMenu(e) {
 	e.stopPropagation();
@@ -31,7 +27,10 @@ function toggleMenu(e) {
 		navbar.style.display = "block";
 		menuButton.classList.add('showMenu');
 
-		document.addEventListener('click', toggleMenu, { once: true, capture: true })
+		document.addEventListener('click', toggleMenu, {
+			once: true,
+			capture: true
+		})
 	}
 }
 
@@ -45,8 +44,6 @@ let topOfView, topOfHome, topOfServices, topOfAbout, topOfContact;
 
 let navLinks = Array.from(document.getElementById("navbar").getElementsByTagName("a"));
 
-// if (displayWidth >= 992) {
-// }
 window.addEventListener("scroll", debounce(onScroll));
 onScroll(); // initial highlight when not scrolled
 
@@ -85,12 +82,3 @@ function debounce(func, wait = 10, immediate = true) {
 		if (callNow) func.apply(context, args);
 	};
 };
-
-/*
-window.addEventListener("load", () => {
-  init();
-});
-
-window.addEventListener("DOMContentLoaded", () => {
-  init();
-}); */
