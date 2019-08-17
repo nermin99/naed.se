@@ -12,24 +12,26 @@ if (displayWidth < 992) {
 function initMenuTogglers() {
 	const toggleButton = document.querySelector('#toggle-menu-button');
 	toggleButton.addEventListener('click', toggleMenu);
-
-	const anchorPoints = document.getElementById('navbar').querySelectorAll('li');
-	anchorPoints.forEach(anchor => anchor.addEventListener('click', toggleMenu));
 }
 
-function toggleMenu() {
+function toggleMenu(e) {
+	e.stopPropagation();
+
 	const navbar = document.getElementById('navbar');
 	const menuButton = document.getElementById('toggle-menu-button');
 	const menuIcon = document.getElementById('toggle-menu-icon')
 
 	if (navbar.style.display === "block") { // hide menu
+		menuIcon.src = "assets/bars-solid.svg";
 		navbar.style.display = "none";
 		menuButton.classList.remove('showMenu');
-		menuIcon.src = "assets/bars-solid.svg";
+
 	} else { // show menu
+		menuIcon.src = "assets/times-solid.svg";
 		navbar.style.display = "block";
 		menuButton.classList.add('showMenu');
-		menuIcon.src = "assets/times-solid.svg";
+
+		document.addEventListener('click', toggleMenu, { once: true, capture: true })
 	}
 }
 
