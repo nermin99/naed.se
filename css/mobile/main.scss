@@ -33,6 +33,8 @@
 /* Tjänster */
 #tjanster {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 100%;
 	min-height: 100vh;
 	height: fit-content;
@@ -43,12 +45,16 @@
 	background-attachment: fixed;
 	background-size: cover;
 
-	article {
-		margin: auto;
-		width: 30rem;
-		padding: 2.5rem;
-		padding-top: $header-height-mobile;
+	h2 {
+		margin-top: $header-height-mobile;
+		padding-left: 2.5rem;
+		width: fit-content;
+		font-family: $pt-sans;
+	}
 
+	article {
+		padding: 2.5rem;
+		padding-top: 0;
 		font-family: $pt-sans;
 
 		ul li {
@@ -61,6 +67,10 @@
 /* Om */
 #om {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
 	width: 100%;
 	min-height: 100vh;
 	height: fit-content;
@@ -70,27 +80,28 @@
 
 	div {
 		display: flex;
-		flex-wrap: wrap;
-		margin: 0 auto;
+		flex-direction: column;
 		max-width: 90%;
-	}
-
-	article {
+		padding: 0 2.5rem;
 		margin: auto;
 		margin-top: $header-height-mobile;
-		width: 27rem;
-		padding: 0 2.5rem;
+		box-sizing: border-box;
 
-		font-family: $pt-sans;
-		text-align: left;
+		h2 {
+			font-family: $pt-sans;
+		}
+
+		article {
+			font-family: $pt-sans;
+			text-align: left;
+		}
 	}
 
 	img {
-		margin: auto;
 		box-sizing: border-box;
 		width: auto;
 		height: auto;
-		max-width: 100%;
+		max-width: 90%;
 		max-height: 20rem;
 	}
 }
@@ -98,6 +109,9 @@
 /* Kontakt */
 #kontakt {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	min-height: 100vh;
 	height: fit-content;
@@ -109,17 +123,23 @@
 	background-size: cover;
 
 	address {
-		margin: auto;
-		margin-top: $header-height-mobile;
-		width: 40rem;
+		width: 100%;
 		height: fit-content;
 
 		font-family: $pt-sans;
 		text-align: center;
 		font-style: normal;
+
+		p {
+			text-align: center;
+			margin-top: 2rem;
+			margin-bottom: 0.5rem;
+			font-weight: bold;
+		}
 	}
 
 	iframe {
+		border: none;
 		margin: 0 auto;
 		margin-top: 1rem;
 		width: 100%;
@@ -128,7 +148,11 @@
 	}
 
 	h2 {
+		margin-top: $header-height-mobile;
+		font-family: $pt-sans;
+		text-align: center;
 		font-style: normal;
+		margin-bottom: 0;
 	}
 
 	h3 {

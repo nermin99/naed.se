@@ -33,6 +33,8 @@
 /* Tjänster */
 #tjanster {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 100%;
 	min-height: 100vh;
 	height: fit-content;
@@ -43,12 +45,19 @@
 	background-attachment: fixed;
 	background-size: cover;
 
+	h2 {
+		margin-left: 10%;
+		padding-top: 2.5rem;
+		padding-left: 2.5rem;
+		width: fit-content;
+		font-family: $pt-sans;
+	}
+
 	article {
-		margin: auto;
 		margin-left: 10%;
 		width: 30rem;
 		padding: 2.5rem;
-
+		padding-top: 0;
 		font-family: $pt-sans;
 
 		ul li {
@@ -61,6 +70,11 @@
 /* Om */
 #om {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	padding: 0 2rem;
 	width: 100%;
 	min-height: 100vh;
 	height: fit-content;
@@ -70,27 +84,26 @@
 
 	div {
 		display: flex;
-		flex-wrap: wrap;
-		margin: 0 auto;
+		flex-direction: column;
+		max-width: 90%;
+		padding: 0 2.5rem;
 
-		@media only screen and (max-width: 1102px) {
+		@media only screen and (max-width: 1056px) {
 			margin-top: $header-height;
 		}
 
-		max-width: 90%;
-	}
+		h2 {
+			font-family: $pt-sans;
+		}
 
-	article {
-		margin: auto;
-		width: 27rem;
-		padding: 0 2.5rem;
-
-		font-family: $pt-sans;
-		text-align: left;
+		article {
+			width: 27rem;
+			font-family: $pt-sans;
+			text-align: left;
+		}
 	}
 
 	img {
-		margin: auto;
 		box-sizing: border-box;
 		width: auto;
 		height: auto;
@@ -102,6 +115,9 @@
 /* Kontakt */
 #kontakt {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	min-height: 100vh;
 	height: fit-content;
@@ -113,17 +129,23 @@
 	background-size: cover;
 
 	address {
-		margin: auto;
-		padding-top: $header-height;
 		width: 40rem;
 		height: fit-content;
 
 		font-family: $pt-sans;
 		text-align: center;
 		font-style: normal;
+
+		p {
+			text-align: center;
+			margin-top: 2rem;
+			margin-bottom: 0.5rem;
+			font-weight: bold;
+		}
 	}
 
 	iframe {
+		border: none;
 		margin: 0 auto;
 		margin-top: 1rem;
 		width: 100%;
@@ -132,7 +154,11 @@
 	}
 
 	h2 {
+		margin-top: $header-height;
+		font-family: $pt-sans;
+		text-align: center;
 		font-style: normal;
+		margin-bottom: 0;
 	}
 
 	h3 {
