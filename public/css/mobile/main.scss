@@ -5,7 +5,7 @@
 	min-height: 100vh;
 	height: fit-content;
 
-	background-image: url("../assets/apartments-background.jpg");
+	background-image: url("../images/apartments-background.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover; // This is what makes the background image rescale based on the container's size
@@ -39,23 +39,20 @@
 	min-height: 100vh;
 	height: fit-content;
 
-	background-image: url("../assets/window.jpg");
+	background-image: url("../images/window.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 
 	h2 {
-		margin-left: 10%;
-		padding-top: 2.5rem;
+		margin-top: $header-height-mobile;
 		padding-left: 2.5rem;
 		width: fit-content;
 		font-family: $pt-sans;
 	}
 
 	article {
-		margin-left: 10%;
-		width: 30rem;
 		padding: 2.5rem;
 		padding-top: 0;
 		font-family: $pt-sans;
@@ -74,7 +71,6 @@
 	align-items: center;
 	flex-wrap: wrap;
 	box-sizing: border-box;
-	padding: 0 2rem;
 	width: 100%;
 	min-height: 100vh;
 	height: fit-content;
@@ -87,17 +83,15 @@
 		flex-direction: column;
 		max-width: 90%;
 		padding: 0 2.5rem;
-
-		@media only screen and (max-width: 1056px) {
-			margin-top: $header-height;
-		}
+		margin: auto;
+		margin-top: $header-height-mobile;
+		box-sizing: border-box;
 
 		h2 {
 			font-family: $pt-sans;
 		}
 
 		article {
-			width: 27rem;
 			font-family: $pt-sans;
 			text-align: left;
 		}
@@ -107,7 +101,7 @@
 		box-sizing: border-box;
 		width: auto;
 		height: auto;
-		max-width: 100%;
+		max-width: 90%;
 		max-height: 20rem;
 	}
 }
@@ -122,14 +116,14 @@
 	min-height: 100vh;
 	height: fit-content;
 
-	background-image: url("../assets/white-beams.jpg");
+	background-image: url("../images/white-beams.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 
 	address {
-		width: 40rem;
+		width: 100%;
 		height: fit-content;
 
 		font-family: $pt-sans;
@@ -154,7 +148,7 @@
 	}
 
 	h2 {
-		margin-top: $header-height;
+		margin-top: $header-height-mobile;
 		font-family: $pt-sans;
 		text-align: center;
 		font-style: normal;

@@ -18,12 +18,12 @@ function toggleMenu(e) {
 	const menuIcon = document.getElementById('toggle-menu-icon')
 
 	if (navbar.style.display === "block") { // hide menu
-		menuIcon.src = "assets/bars-solid.svg";
+		menuIcon.src = "images/bars-solid.svg";
 		navbar.style.display = "none";
 		menuButton.classList.remove('showMenu');
 
 	} else { // show menu
-		menuIcon.src = "assets/times-solid.svg";
+		menuIcon.src = "images/times-solid.svg";
 		navbar.style.display = "block";
 		menuButton.classList.add('showMenu');
 
