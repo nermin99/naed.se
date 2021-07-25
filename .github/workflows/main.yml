@@ -23,5 +23,5 @@ jobs:
           password: ${{ secrets.SSH_PASS }}
           port: 22
           script: |
-            cd /var/www/naed.se
+            cd /var/www/naed.se/html
             git pull
