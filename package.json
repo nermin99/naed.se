@@ -1,26 +1,27 @@
 {
-	"name": "naed",
-	"version": "1.0.0",
-	"description": "Svenska -------",
-	"main": "index.js",
-	"dependencies": {
-		"http-server": "^0.11.1",
-		"sass": "^1.22.3"
-	},
-	"devDependencies": {},
-	"scripts": {
-		"start": "http-server -c-1",
-		"sass-watch-min": "sass --watch public/css/base.scss:public/css/style.css --no-source-map --style compressed",
-		"sass-watch": "sass --watch public/css/base.scss:public/css/style.css --no-source-map"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Nermin99/naed.git"
-	},
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/Nermin99/naed/issues"
-	},
-	"homepage": "https://github.com/Nermin99/naed#readme"
+  "name": "naed",
+  "version": "1.0.0",
+  "description": "Svenska -------",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.22.3"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  },
+  "scripts": {
+    "start": "http-server -c-1",
+    "sass-watch-min": "sass --watch public/css/base.scss:public/css/style.css --no-source-map --style compressed",
+    "sass-watch": "sass --watch public/css/base.scss:public/css/style.css --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nermin99/naed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nermin99/naed/issues"
+  },
+  "homepage": "https://github.com/Nermin99/naed#readme"
 }
