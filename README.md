@@ -21,7 +21,7 @@ npm install
 Start the sass watcher and optionally the local server.
 
 ```
-npm run sass-watch-min
+npm run sass-watch
 npm start
 ```
 

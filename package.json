@@ -11,8 +11,8 @@
   },
   "scripts": {
     "start": "http-server -c-1",
-    "sass-watch-min": "sass --watch public/css/base.scss:public/css/style.css --no-source-map --style compressed",
-    "sass-watch": "sass --watch public/css/base.scss:public/css/style.css --no-source-map"
+    "sass-watch-min": "sass --watch css/base.scss:css/style.css --no-source-map --style compressed",
+    "sass-watch": "sass --watch css/base.scss:css/style.css --no-source-map"
   },
   "repository": {
     "type": "git",
