@@ -1,5 +1,27 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif&display=swap");
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif&display=swap');
+
+/* Variables */
+:root {
+  --NAED-blue: #b2ccec;
+  --header-height: 7.5rem;
+  --header-height-mobile: 5.5rem;
+  --footer-height: 6.375rem;
+  --footer-height-mobile: 4.375rem;
+  --pt-helvetica: sans-serif, helvetica, verdana;
+  --pt-sans: 'PT Sans', sans-serif;
+}
+
+/* Typography */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
 .italic {
   font-style: italic;
 }
@@ -52,402 +74,168 @@ ul {
   font-size: 1.2rem;
 }
 
-/* Extra small devices (phones, < 768px) */
-@media only screen and (max-width: 991px) {
-  header {
-    position: fixed;
-    display: flex;
-    min-height: 5.5rem;
-    height: fit-content;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    background-color: #b2ccec;
-  }
-  header aside {
-    height: fit-content;
-    width: fit-content;
-  }
-  header aside .logo-text {
-    font-style: italic;
-    font-family: sans-serif, helvetica, verdana;
-    font-size: 2.625rem;
-    margin: 0;
-  }
-  header aside .logo-text-desc {
-    font-style: italic;
-    font-family: "PT Sans", sans-serif;
-    font-size: 1.1rem;
-  }
-  header button {
-    position: absolute;
-    right: 0;
-    padding: 1.7rem;
-    border: none;
-    background-color: transparent;
-  }
-  header button img {
-    width: 1.75rem;
-    height: 2rem;
-  }
-  header button.showMenu {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  header button:hover {
-    cursor: pointer;
-  }
-  header button:focus {
-    outline: none;
-  }
-  header nav {
-    display: none;
-    position: absolute;
-    top: 5.5rem;
-    width: 100%;
-    height: fit-content;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #b2ccec;
-  }
-  header nav ul li {
-    list-style: none;
-    font-family: "PT Sans", sans-serif;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    text-align: right;
-    text-transform: uppercase;
-  }
-  header nav ul li:hover {
-    cursor: pointer;
-    background-color: #b2ccec;
-  }
-  header nav ul li:hover a {
-    color: black;
-  }
-  header nav ul li a {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    color: #b2ccec;
-  }
-  header nav ul li a.selected {
-    color: red;
-  }
+/* Header */
+header {
+  position: fixed;
+  display: flex;
+  min-height: var(--header-height);
+  height: fit-content;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--NAED-blue);
 
-  /* Hem */
-  #hem {
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
-    height: fit-content;
-    background-image: url("../images/apartments-background.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #hem div {
-    margin: auto;
-    width: 100%;
-    padding: 0.7%;
-    font-family: "PT Sans", sans-serif;
-    text-align: center;
-    color: white;
-    background-color: black;
-  }
-  #hem div h2 {
-    margin-bottom: 1rem;
-  }
-  #hem div h3 {
-    font-size: 1.755rem;
-  }
-
-  /* Tjänster */
-  #tjanster {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    height: fit-content;
-    background-image: url("../images/window.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  #tjanster h2 {
-    margin-top: 5.5rem;
-    padding-left: 2.5rem;
-    width: fit-content;
-    font-family: "PT Sans", sans-serif;
-  }
-  #tjanster article {
-    padding: 2.5rem;
-    padding-top: 0;
-    font-family: "PT Sans", sans-serif;
-  }
-  #tjanster article ul li {
-    list-style-position: outside;
-    margin-left: 1em;
-  }
-
-  /* Om */
-  #om {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 100vh;
-    height: fit-content;
-    background-color: black;
-    color: white;
-  }
-  #om div {
-    display: flex;
-    flex-direction: column;
-    max-width: 90%;
-    padding: 0 2.5rem;
-    margin: auto;
-    margin-top: 5.5rem;
-    box-sizing: border-box;
-  }
-  #om div h2 {
-    font-family: "PT Sans", sans-serif;
-  }
-  #om div article {
-    font-family: "PT Sans", sans-serif;
-    text-align: left;
-  }
-  #om img {
-    box-sizing: border-box;
-    width: auto;
-    height: auto;
-    max-width: 90%;
-    max-height: 20rem;
-  }
-
-  /* Kontakt */
-  #kontakt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    height: fit-content;
-    background-image: url("../images/window.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  #kontakt address {
-    width: 100%;
-    height: fit-content;
-    font-family: "PT Sans", sans-serif;
-    text-align: center;
-    font-style: normal;
-  }
-  #kontakt address p {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
-  #kontakt iframe {
-    border: none;
-    margin: 0 auto;
-    margin-top: 1rem;
-    width: 100%;
-    height: 30rem;
-    padding: 1rem 0;
-  }
-  #kontakt h2 {
-    margin-top: 5.5rem;
-    font-family: "PT Sans", sans-serif;
-    text-align: center;
-    font-style: normal;
-    margin-bottom: 0;
-  }
-  #kontakt h3 {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  #kontakt a {
-    text-decoration: none;
-    color: #0000EE;
-  }
-
-  footer {
-    display: flex;
-    width: 100%;
-    height: 4.375rem;
-    background-color: #b2ccec;
-  }
-  footer p {
-    margin: auto;
-    padding: 1rem;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-    font-size: 1rem;
-    font-family: "PT Sans", sans-serif;
-  }
-}
-/* Small devices (tablets (vertical), >= 768px) */
-/* Medium devices (tablets (horizontal) and small desktops, >= 992px) */
-@media only screen and (min-width: 992px) {
-  header {
-    position: fixed;
-    display: flex;
-    min-height: 7.5rem;
-    height: fit-content;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #b2ccec;
-  }
-  header aside {
+  aside {
     padding: 1rem;
     height: fit-content;
     width: fit-content;
     margin-left: 5rem;
+
+    .logo-text {
+      font-style: italic;
+      font-family: var(--pt-helvetica);
+      font-size: 2.625rem;
+      margin: 0;
+    }
+
+    .logo-text-desc {
+      font-style: italic;
+      font-family: var(--pt-sans);
+      font-size: 1.1rem;
+    }
   }
-  header aside .logo-text {
-    font-style: italic;
-    font-family: sans-serif, helvetica, verdana;
-    font-size: 2.625rem;
-    margin: 0;
-  }
-  header aside .logo-text-desc {
-    font-style: italic;
-    font-family: "PT Sans", sans-serif;
-    font-size: 1.1rem;
-  }
-  header #toggle-menu-button {
+
+  #toggle-menu-button {
     display: none;
   }
-  header nav {
+
+  nav {
     margin-right: 7rem;
     width: fit-content;
     height: fit-content;
-  }
-  header nav ul li {
-    display: inline;
-    margin: 0 0.9rem;
-    font-family: "PT Sans", sans-serif;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  header nav a.selected {
-    color: red;
-  }
 
-  /* Hem */
-  #hem {
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
-    height: fit-content;
-    background-image: url("../images/apartments-background.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    ul {
+      li {
+        display: inline;
+        margin: 0 0.9rem;
+        font-family: var(--pt-sans);
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+
+    a {
+      &.selected {
+        color: red;
+      }
+    }
   }
-  #hem div {
+}
+
+/* Hem */
+#hem {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+
+  background-image: url('../images/apartments-background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  div {
     margin: auto;
     width: 100%;
     padding: 0.7%;
-    font-family: "PT Sans", sans-serif;
+
+    font-family: var(--pt-sans);
     text-align: center;
     color: white;
     background-color: black;
-  }
-  #hem div h2 {
-    margin-bottom: 1rem;
-  }
-  #hem div h3 {
-    font-size: 1.755rem;
-  }
 
-  /* Tjänster */
-  #tjanster {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    height: fit-content;
-    background-image: url("../images/window.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.755rem;
+    }
   }
-  #tjanster h2 {
+}
+
+/* Tjänster */
+#tjanster {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+
+  background-image: url('../images/window.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  h2 {
     margin-left: 10%;
     padding-top: 2.5rem;
     padding-left: 2.5rem;
     width: fit-content;
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--pt-sans);
   }
-  #tjanster article {
+
+  article {
     margin-left: 10%;
     width: 30rem;
     padding: 2.5rem;
     padding-top: 0;
-    font-family: "PT Sans", sans-serif;
-  }
-  #tjanster article ul li {
-    list-style-position: outside;
-    margin-left: 1em;
-  }
+    font-family: var(--pt-sans);
 
-  /* Om */
-  #om {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    padding: 0 2rem;
-    width: 100%;
-    min-height: 100vh;
-    height: fit-content;
-    background-color: black;
-    color: white;
+    ul li {
+      list-style-position: outside;
+      margin-left: 1em;
+    }
   }
-  #om div {
+}
+
+/* Om */
+#om {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+
+  background-color: black;
+  color: white;
+
+  div {
     display: flex;
     flex-direction: column;
     max-width: 90%;
     padding: 0 2.5rem;
+    margin-top: var(--header-height);
+
+    h2 {
+      font-family: var(--pt-sans);
+    }
+
+    article {
+      width: 27rem;
+      font-family: var(--pt-sans);
+      text-align: left;
+    }
   }
-  /* Kontakt */
-}
-@media only screen and (min-width: 992px) and (max-width: 1056px) {
-  #om div {
-    margin-top: 7.5rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #om div h2 {
-    font-family: "PT Sans", sans-serif;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #om div article {
-    width: 27rem;
-    font-family: "PT Sans", sans-serif;
-    text-align: left;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #om img {
+
+  img {
     box-sizing: border-box;
     width: auto;
     height: auto;
@@ -455,89 +243,185 @@ ul {
     max-height: 20rem;
   }
 }
-@media only screen and (min-width: 992px) {
-  #kontakt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    height: fit-content;
-    background-image: url("../images/window.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #kontakt h2 {
+
+/* Kontakt */
+#kontakt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+
+  background-image: url('../images/window.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  h2 {
     margin-left: 10%;
     padding-top: 2.5rem;
     padding-left: 2.5rem;
     width: fit-content;
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--pt-sans);
   }
-}
-@media only screen and (min-width: 992px) {
-  #kontakt h2 {
-    margin-top: 7.5rem;
-    font-family: "PT Sans", sans-serif;
+
+  h2 {
+    margin-top: var(--header-height);
+    font-family: var(--pt-sans);
     text-align: center;
     font-style: normal;
   }
-}
-@media only screen and (min-width: 992px) {
-  #kontakt address {
+
+  address {
     margin-left: 10%;
     width: 40rem;
     padding: 2.5rem;
     padding-top: 0;
     height: fit-content;
-    font-family: "PT Sans", sans-serif;
+
+    font-family: var(--pt-sans);
     font-style: normal;
+
+    p {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+
+    a {
+      display: inline-block;
+      margin-bottom: 1.4rem;
+      text-decoration: none;
+      color: #0000ee;
+    }
   }
 }
-@media only screen and (min-width: 992px) {
-  #kontakt address p {
-    margin-bottom: 0;
-    font-weight: bold;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #kontakt address a {
-    display: inline-block;
-    margin-bottom: 1.4rem;
-    text-decoration: none;
-    color: #0000EE;
-  }
-}
-@media only screen and (min-width: 992px) {
-  footer {
-    display: flex;
-    width: 100%;
-    height: 6.375rem;
-    background-color: #b2ccec;
-  }
-}
-@media only screen and (min-width: 992px) {
-  footer p {
+
+/* Footer */
+footer {
+  display: flex;
+  width: 100%;
+  height: var(--footer-height);
+  background-color: var(--NAED-blue);
+
+  p {
     margin: auto;
     padding: 1rem;
     width: fit-content;
     height: fit-content;
     text-align: center;
     font-size: 1rem;
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--pt-sans);
   }
 }
-/* Large devices (desktops, >= 1200px) */
-* {
-  margin: 0;
-  padding: 0;
-}
 
-a {
-  text-decoration: none;
-  color: black;
+/* Mobile specific styles */
+@media (width <= 900px) {
+  header {
+    min-height: 5.5rem; /* TODO: CSS variable */
+    justify-content: center;
+
+    aside {
+      padding: initial;
+      margin: initial;
+    }
+
+    #toggle-menu-button {
+      display: initial;
+      position: absolute;
+      right: 0;
+      padding: 1.7rem;
+      border: none;
+      background-color: transparent;
+
+      img {
+        width: 1.75rem;
+        height: 2rem;
+      }
+
+      &.showMenu {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    nav {
+      display: none;
+      position: absolute;
+      margin-right: 0;
+      top: 5.5rem; /* TODO: CSS variable */
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #b2ccec; /* TODO: CSS variable */
+    }
+
+    ul li {
+      list-style: none;
+      margin: 0 !important;
+      font-size: 1.1rem !important;
+      letter-spacing: 1px;
+      text-align: right;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #b2ccec; /* TODO: CSS variable */
+
+        a {
+          color: black;
+        }
+      }
+
+      a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        color: #b2ccec; /* TODO: CSS variable */
+
+        &.selected {
+          color: red;
+        }
+      }
+    }
+  }
+
+  #hem div {
+    h2 {
+      padding: 0 !important;
+      margin-top: 1.6rem !important;
+    }
+  }
+
+  article {
+    width: initial !important;
+    margin-left: initial !important;
+  }
+
+  h2 {
+    margin-left: initial !important;
+    padding-top: 0 !important;
+    margin-top: 5.5rem !important; /* TODO: CSS variable */
+  }
+
+  #om div {
+    padding: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  address {
+    width: initial !important;
+    margin-left: 0 !important;
+  }
+
+  footer {
+    height: 4.375rem; /* TODO: CSS variable */
+  }
 }
