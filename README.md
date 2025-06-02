@@ -6,4 +6,4 @@ NAED Byggkonsult is a construction consultancy that assists with building permit
 
 ## Development
 
-This is a static website, so just open `index.html` in your browser and refresh between saves.
+This is a plain and simple static website, so just open `index.html` in your browser and refresh between saves.
