@@ -1,4 +1,10 @@
-# <www.naed.se>
+# ARCHIVED
+
+The old website will be replaced by a new one.
+
+---
+
+# www.naed.se
 
 Website for **NAED Byggkonsult**
 
